@@ -1,3 +1,13 @@
+## [v.1.0.0] - Jun 10, 2023
+
+### Added
+- Responsiveness
+- Navigation
+- Fading animations
+
+### Notes
+- Added responsiveness, navigation anchors with smooth scroll, and also an extra fading animations with observer.
+
 ## [Unreleased] - Jun 10, 2023
 
 ### Added

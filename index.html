@@ -31,13 +31,13 @@
                     </label>
                     <div class="menu">
                         <ul>
-                            <li><a class="nav-link active">Home</a></li>
-                            <li><a class="nav-link">About</a></li>
-                            <li><a class="nav-link">Work</a></li>
-                            <li><a class="nav-link">Process</a></li>
-                            <li><a class="nav-link">Services</a></li>
-                            <li><a class="nav-link">Testimonials</a></li>
-                            <li><a class="nav-link">Contact</a></li>
+                            <li><a href="/" class="nav-link active">Home</a></li>
+                            <li><a href="#about" class="nav-link">About</a></li>
+                            <li><a href="#work" class="nav-link">Work</a></li>
+                            <li><a href="#process" class="nav-link">Process</a></li>
+                            <li><a href="#services" class="nav-link">Services</a></li>
+                            <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                            <li><a href="#contact" class="nav-link">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -50,19 +50,19 @@
         <section class="vh-100 section-one">
             <div class="container hero">
                 <div class="d-flex justify-content-end">
-                    <div class="w-50 container-hero">
-                        <h1>We Design and&nbsp;Develop</h1>
-                        <h3 class="mt-5">We are a new design studio based in USA. We have over 20 years
+                    <div class="w-50 container-hero fade fade-up">
+                        <h1 >We Design and&nbsp;Develop</h1>
+                        <h3 class="mt-5" >We are a new design studio based in USA. We have over 20 years
                             of combined experience, and know a&nbsp;thing or two about designing websites and mobile
                             apps.
                         </h3>
-                        <button type="button" class="btn btn-primary mt-5">Contact us</button>
+                        <a href="#contact" type="button" class="btn btn-primary mt-5">Contact us</a>
                     </div>
                 </div>
             </div>
         </section>
         <section>
-            <div class="container text-center">
+            <div class="container text-center fade fade-up" id="about" data-delay="200">
                 <h2>About us</h2>
                 <p class="mt-5 mx-20">Divide have don't man wherein air fourth. Own itself make have night won't make. A
                     you
@@ -73,18 +73,18 @@
         </section>
         <section class="section-skills">
             <div class="container">
-                <h2 class="pt-5">Professional Skills</h2>
+                <h2 class="pt-5 fade fade-left">Professional Skills</h2>
                 <div class="w-50 pb-5">
                     <div class="fw-bold">
-                        <div>
+                        <div  class="fade fade-left" data-delay="100">
                             <p class="mt-5"><span>UI/UX DESIGN</span><span class="ps-5">75%</span></p>
                             <div class="progress-bar" data-value="75"></div>
                         </div>
-                        <div>
+                        <div class="fade fade-left" data-delay="200">
                             <p class="mt-5"><span>WEB DEVELOPMENT</span><span class="ps-5">90%</span></p>
                             <div class="progress-bar" data-value="90"></div>
                         </div>
-                        <div>
+                        <div class="fade fade-left" data-delay="300">
                             <p class="mt-5"><span>MARKETING</span><span class="ps-5">65%</span></p>
                             <div class="progress-bar" data-value="65"></div>
                         </div>
@@ -95,8 +95,8 @@
         <section class="section-info">
             <div class="container">
                 <div class="text-white d-flex project-info flex-wrap">
-                    <div class="grid-item">
-                        <div class="d-flex">
+                    <div class="grid-item fade fade-up" data-delay="0">
+                        <div class="d-flex flex-start">
                             <div>
                                 <img class="icon pe-4" src="/assets/icons/portfolio.svg" alt="Projects Completed">
                             </div>
@@ -107,8 +107,8 @@
                         </div>
                     </div>
 
-                    <div class="grid-item">
-                        <div class="d-flex">
+                    <div class="grid-item fade fade-up" data-delay="200">
+                        <div class="d-flex flex-start">
                             <div>
                                 <img class="icon pe-4" src="/assets/icons/clock.svg" alt="Working Hours">
                             </div>
@@ -119,8 +119,8 @@
                         </div>
                     </div>
 
-                    <div class="grid-item">
-                        <div class="d-flex">
+                    <div class="grid-item fade fade-up" data-delay="300">
+                        <div class="d-flex flex-start">
                             <div>
                                 <img class="icon pe-4" src="/assets/icons/star.svg" alt="Positive feedbacks">
                             </div>
@@ -131,8 +131,8 @@
                         </div>
                     </div>
 
-                    <div class="grid-item">
-                        <div class="d-flex">
+                    <div class="grid-item fade fade-up" data-delay="400">
+                        <div class="d-flex flex-start">
                             <div>
                                 <img class="icon pe-4" src="/assets/icons/like.svg" alt="Happy clients">
                             </div>
@@ -146,9 +146,9 @@
                 </div>
             </div>
 
-            <div class="d-flex flex-wrap">
+            <div class="d-flex flex-wrap fade fade-left" >
                 <div class="grid-item">
-                    <div class="product-overlay">
+                    <div class="product-overlay" id="work">
                         <img src="/assets/icons/look.svg" alt="view" class="icon-product">
                     </div>
                     <img class="product-img" src="/assets/products/giorgio-trovato-pGeDU93n0fQ-unsplash.jpg" alt="">
@@ -199,17 +199,17 @@
 
 
 
+                <button type="button" class="more-work">LOAD MORE WORK</button>
             </div>
-            <button type="button" class="more-work">LOAD MORE WORK</button>
         </section>
         <section>
-            <div class="container text-center">
-                <h2>Our Work Process</h2>
-                <p class="mt-5 mx-20">Was years at season was there form he in in thom together over that. Third sixt
+            <div class="container text-center" id="process">
+                <h2 class="fade fade-left">Our Work Process</h2>
+                <p class="mt-5 mx-20 fade fade-left">Was years at season was there form he in in thom together over that. Third sixt
                     gathered
                     female creeping beaning behold years.</p>
                 <div class="mt-5 position-relative">
-                    <video id="video">
+                    <video id="video" class="fade fade-up" data-delay="150">
                         <source src="/assets/SampleVideo_1280x720_1mb.mp4" type="video/mp4" />
                         <p>
                             Your browser doesn't support HTML video. Here is a
@@ -222,43 +222,43 @@
         </section>
 
         <section class="bg-tenary">
-            <div class="container d-flex flex-wrap text-center pt-5 pb-5">
-                <div class="grid-item">
+            <div class="container d-flex flex-wrap g1 text-center pt-5 pb-5" id="services">
+                <div class="grid-item fade fade-up">
                     <img class="icon-secondary" src="/assets/icons/diamond.svg" alt="">
                     <p class="text-secondary fw-bold">UI/UX DESIGN</p>
                     <p>Be set fourth land god darkness make it wherein own</p>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item fade fade-up">
                     <img class="icon-secondary" src="/assets/icons/arc.svg" alt="">
                     <p class="text-secondary fw-bold">WEB DEVELOPMENT</p>
                     <p>A she'd them bring void moving third she'd kind fill</p>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item fade fade-up">
                     <img class="icon-secondary" src="/assets/icons/phone.svg" alt="">
                     <p class="text-secondary fw-bold">APP / MOBILE</p>
                     <p>Dominion man second spirit he, earth they're creeping</p>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item fade fade-up">
                     <img class="icon-secondary" src="/assets/icons/joy.svg" alt="">
                     <p class="text-secondary fw-bold">GAME DESIGN</p>
                     <p>Give won't after land fill creeping meat you, may</p>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item fade fade-up">
                     <img class="icon-secondary" src="/assets/icons/plane.svg" alt="">
                     <p class="text-secondary fw-bold">SEO / MARKETING</p>
                     <p>Creepeth one seas cattle grass give moving saw give</p>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item fade fade-up">
                     <img class="icon-secondary" src="/assets/icons/star.svg" alt="">
                     <p class="text-secondary fw-bold">PHOTOGRAPHY</p>
                     <p>Open, great whales air rule for, fourth life whales</p>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item fade fade-up">
                     <img class="icon-secondary" src="/assets/icons/magic-wand.svg" alt="">
                     <p class="text-secondary fw-bold">GRAPHIC DESIGN</p>
                     <p>Morning his saying moveth it multiply appear life be</p>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item fade fade-up">
                     <img class="icon-secondary" src="/assets/icons/paint-bucket.svg" alt="">
                     <p class="text-secondary fw-bold">ILLUSTRATIONS</p>
                     <p>Whales likeness hath, man kind for them air two won't</p>
@@ -267,14 +267,14 @@
         </section>
 
         <section class="bg-primary">
-            <div class="container">
+            <div class="container" id="testimonials">
                 <div class="carousel text-center text-white pt-5 pb-5">
                     <div class="carousel-inner">
                         <div class="carousel-item">
                             <div class="carousel-body">
                                 <p class="quote mx-20 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                                     Deleniti, quidem veritatis fugiat sequi, quibusdam nulla ea quae vel, repudiandae ab
-                                    obcaecati beatae. Aliquam assumenda vel, distinctio blanditiis aliquid fugit sint.
+                                    obcaecati beatae.
                             </div>
                             <p class="quote-name mt-5 text-secondary text-white">Michael Hopkins</p>
                         </div>
@@ -294,8 +294,7 @@
                             <div class="carousel-body">
                                 <p class="quote mx-20 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
                                     exercitationem nihil dolorem voluptates recusandae corporis eligendi provident
-                                    velit, corrupti officia quibusdam atque maiores sed maxime, voluptatibus molestiae
-                                    quidem voluptatum? Rem.
+                                    velit.
                             </div>
                             <p class="quote-name mt-5 text-secondary text-white">Michael Hopkins</p>
                         </div>
@@ -309,22 +308,20 @@
 
         <section>
             <div class="container hero">
-                <div class="d-flex">
-                    <div class="grid-item"><img src="/assets/partners/Anchor-Graphics-20939101-1-1-580x386.jpg" alt=""
+                <div class="d-flex flex-wrap">
+                    <div class="grid-item fade fade-up" data-delay="50"><img src="/assets/partners/Anchor-Graphics-20939101-1-1-580x386.jpg" alt=""
                             class="partner-img"></div>
-                    <div class="grid-item"><img src="/assets/partners/Horse-Logo-Graphics-26667336-1-580x387.jpg" alt=""
+                    <div class="grid-item fade fade-up" data-delay="100"><img src="/assets/partners/Horse-Logo-Graphics-26667336-1-580x387.jpg" alt=""
                             class="partner-img"></div>
-                    <div class="grid-item"><img src="/assets/partners/Mountain-Graphics-20938652-1-1-580x386.jpg" alt=""
+                    <div class="grid-item fade fade-up" data-delay="150"><img src="/assets/partners/Mountain-Graphics-20938652-1-1-580x386.jpg" alt=""
                             class="partner-img"></div>
-                    <div class="grid-item"><img src="/assets/partners/Mountain-logo-Graphics-27021752-1-580x387.jpg"
+                    <div class="grid-item fade fade-up" data-delay="200"><img src="/assets/partners/Mountain-logo-Graphics-27021752-1-580x387.jpg"
                             alt="" class="partner-img"></div>
-                    <div class="grid-item"><img src="/assets/partners/Wolf-logo-Graphics-27284292-1-580x387.jpg" alt=""
-                            class="partner-img"></div>
                 </div>
             </div>
         </section>
         <section class="bg-tenary text-center">
-            <div class="container">
+            <div class="container fade fade-up" id="contact">
                 <h2 class="pt-5">Need a Project?</h2>
                 <p class="mt-5 mx-20">Let us know what you're looking for in an agency. We'll take a look and see if
                     this could be
@@ -350,15 +347,15 @@
     <footer>
         <section class="bg-footer">
             <div class="container">
-                <div class="d-flex flex-wrap">
+                <div class="d-flex flex-wrap gap">
                     <div class="grid-item">
                         <p class="fw-bold text-white">Piroll Design, Inc.</p>
                         <span class="text-ternary">&copy; 2017 Piroll. All rights reserved.<br>Designed by robirurk.</span>
                     </div>
                     <div class="grid-item">
-                        <div class="d-flex flew-wrap">
+                        <div class="d-flex flew-wrap cgap" >
                             <div class="grid-item">
-                                <span class="text-ternary">hello@pirolltheme.com<br>+44 987 065 908</span>
+                                <span class="text-ternary"><a href="mailto:hello@pirolltheme.com">hello@pirolltheme.com</a><br><a href="tel:+44-987-065-908">+44 987 065 908</a></span>
 
                             </div>
                             <div class="grid-item">

@@ -91,6 +91,41 @@ document.addEventListener('visibilitychange', inactiveTab);
 
 
 
+
+const menuToggle = document.getElementById('menu-toggle');
+const menu = document.querySelector('.menu');
+const navLinks = document.querySelectorAll('.nav-link');
+
+navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+        menuToggle.checked = false;
+        menu.classList.remove('open');
+    });
+});
+
+
+
+const fadeElements = document.querySelectorAll('.fade');
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            const delay = entry.target.dataset.delay || 0;
+            setTimeout(() => {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target);
+            }, delay);
+        }
+    });
+});
+
+fadeElements.forEach((element) => {
+    observer.observe(element);
+});
+
+
+
+
 showCarouselItem(currentIndex);
 startCarouselInterval();
 progressBars();

@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Nunito+Sans:opsz@6..12&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
@@ -12,11 +17,19 @@
 
 <body>
     <header>
-        <div class="container">
-            <nav class="nav">
-                <div class="d-flex justify-content-between">
-                    <div><img src="" alt="Logo"></div>
-                    <div>
+        <div class="container nav">
+            <nav>
+                <div class="d-flex justify-content-between align-center">
+                    <a href="/">
+                        <img src="/assets/triangular-logo-svgrepo-com.svg" class="logo" alt="Logo">
+                    </a>
+                    <input type="checkbox" id="menu-toggle">
+                    <label for="menu-toggle" class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <div class="menu">
                         <ul>
                             <li><a class="nav-link active">Home</a></li>
                             <li><a class="nav-link">About</a></li>
@@ -29,19 +42,21 @@
                     </div>
                 </div>
             </nav>
+            
         </div>
     </header>
 
     <main>
         <section class="vh-100 section-one">
-            <div class="container">
+            <div class="container hero">
                 <div class="d-flex justify-content-end">
-                    <div class="w-50">
-                        <h1>We Design and Develop</h1>
-                        <h3 class="text-secondary mt-5">We are a new design studio based in USA. We have over 20 years
-                            of combined experience, and know a thing or two about designing websites and mobile apps.
-                            </p>
-                            <button type="button" class="btn btn-primary mt-5">Contact us</button>
+                    <div class="w-50 container-hero">
+                        <h1>We Design and&nbsp;Develop</h1>
+                        <h3 class="mt-5">We are a new design studio based in USA. We have over 20 years
+                            of combined experience, and know a&nbsp;thing or two about designing websites and mobile
+                            apps.
+                        </h3>
+                        <button type="button" class="btn btn-primary mt-5">Contact us</button>
                     </div>
                 </div>
             </div>
@@ -49,15 +64,18 @@
         <section>
             <div class="container text-center">
                 <h2>About us</h2>
-                <p class="mt-5">Divide have don't man wherein air fourth. Own itself make have night won't make. A you
+                <p class="mt-5 mx-20">Divide have don't man wherein air fourth. Own itself make have night won't make. A
+                    you
                     under Seed appear which good give. Own give air wihtout fowl moeth dry first heaven fruit, dominon
                     she'd won't very all.</p>
-                <img class="mt-5" src="/assets/signature.png" alt="Signature" title="Signature">
+                <img class="mt-3 signature" src="/assets/signature.png" alt="Signature" title="Signature">
             </div>
-            <div class="container section-skills">
-                <h2>Professional Skills</h2>
-                <div class="w-50">
-                    <div>
+        </section>
+        <section class="section-skills">
+            <div class="container">
+                <h2 class="pt-5">Professional Skills</h2>
+                <div class="w-50 pb-5">
+                    <div class="fw-bold">
                         <div>
                             <p class="mt-5"><span>UI/UX DESIGN</span><span class="ps-5">75%</span></p>
                             <div class="progress-bar" data-value="75"></div>
@@ -75,45 +93,53 @@
             </div>
         </section>
         <section class="section-info">
-            <div class="container ">
-                <div class="project-info d-flex">
-                    <div class="d-flex">
-                        <div>
-                            <img class="icon" src="" alt="Projects Completed">
-                        </div>
-                        <div>
-                            <p class="fw-bold">548</p>
-                            <p>PROJECTS COMPLETED</p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex">
-                        <div>
-                            <img class="icon" src="" alt="Working Hours">
-                        </div>
-                        <div>
-                            <p class="fw-bold">548</p>
-                            <p>WORKING HOURS</p>
+            <div class="container">
+                <div class="text-white d-flex project-info flex-wrap">
+                    <div class="grid-item">
+                        <div class="d-flex">
+                            <div>
+                                <img class="icon pe-4" src="/assets/icons/portfolio.svg" alt="Projects Completed">
+                            </div>
+                            <div>
+                                <h4>548</h4>
+                                <span class="text-white">PROJECTS COMPLETED</span>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="d-flex">
-                        <div>
-                            <img class="icon" src="" alt="Positive feedbacks">
-                        </div>
-                        <div>
-                            <p class="fw-bold">612</p>
-                            <p>POSITIVE FEEDBACKS</p>
+                    <div class="grid-item">
+                        <div class="d-flex">
+                            <div>
+                                <img class="icon pe-4" src="/assets/icons/clock.svg" alt="Working Hours">
+                            </div>
+                            <div>
+                                <h4>1465</h4>
+                                <span class="text-white">WORKING HOURS</span>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="d-flex">
-                        <div>
-                            <img class="icon" src="" alt="Happy clients">
+                    <div class="grid-item">
+                        <div class="d-flex">
+                            <div>
+                                <img class="icon pe-4" src="/assets/icons/star.svg" alt="Positive feedbacks">
+                            </div>
+                            <div>
+                                <h4>612</h4>
+                                <span class="text-white">POSITIVE FEEDBACKS</span>
+                            </div>
                         </div>
-                        <div>
-                            <p class="fw-bold">735</p>
-                            <p>HAPPY CLIENTS</p>
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="d-flex">
+                            <div>
+                                <img class="icon pe-4" src="/assets/icons/like.svg" alt="Happy clients">
+                            </div>
+                            <div>
+                                <h4>735</h4>
+                                <span class="text-white">HAPPY CLIENTS</span>
+                            </div>
                         </div>
                     </div>
 
@@ -121,122 +147,257 @@
             </div>
 
             <div class="d-flex flex-wrap">
-                <div class="grid-item"><img class="product-img" src="" alt=""></div>
-                <div class="grid-item"><img class="product-img" src="" alt=""></div>
-                <div class="grid-item"><img class="product-img" src="" alt=""></div>
-                <div class="grid-item"><img class="product-img" src="" alt=""></div>
-                <div class="grid-item"><img class="product-img" src="" alt=""></div>
-                <div class="grid-item"><img class="product-img" src="" alt=""></div>
-                <div class="grid-item"><img class="product-img" src="" alt=""></div>
-                <div class="grid-item"><img class="product-img" src="" alt=""></div>
+                <div class="grid-item">
+                    <div class="product-overlay">
+                        <img src="/assets/icons/look.svg" alt="view" class="icon-product">
+                    </div>
+                    <img class="product-img" src="/assets/products/giorgio-trovato-pGeDU93n0fQ-unsplash.jpg" alt="">
+                </div>
+                <div class="grid-item">
+                    <div class="product-overlay">
+                        <img src="/assets/icons/look.svg" alt="view" class="icon-product">
+                    </div>
+                    <img class="product-img" src="/assets/products/charlesdeluvio-1-nx1QR5dTE-unsplash.jpg" alt="">
+                </div>
+                <div class="grid-item">
+                    <div class="product-overlay">
+                        <img src="/assets/icons/look.svg" alt="view" class="icon-product">
+                    </div>
+                    <img class="product-img" src="/assets/products/cristina-matos-albers-Ltv7a5m8i4c-unsplash.jpg"
+                        alt="">
+                </div>
+                <div class="grid-item">
+                    <div class="product-overlay">
+                        <img src="/assets/icons/look.svg" alt="view" class="icon-product">
+                    </div>
+                    <img class="product-img" src="/assets/products/giorgio-trovato-K62u25Jk6vo-unsplash.jpg" alt="">
+                </div>
+                <div class="grid-item">
+                    <div class="product-overlay">
+                        <img src="/assets/icons/look.svg" alt="view" class="icon-product">
+                    </div>
+                    <img class="product-img" src="/assets/products/giorgio-trovato-p0OlRAAYXLY-unsplash.jpg" alt="">
+                </div>
+                <div class="grid-item">
+                    <div class="product-overlay">
+                        <img src="/assets/icons/look.svg" alt="view" class="icon-product">
+                    </div>
+                    <img class="product-img" src="/assets/products/mike-meyers-v8XaVfyo41Q-unsplash.jpg" alt="">
+                </div>
+                <div class="grid-item">
+                    <div class="product-overlay">
+                        <img src="/assets/icons/look.svg" alt="view" class="icon-product">
+                    </div>
+                    <img class="product-img" src="/assets/products/imani-bahati-LxVxPA1LOVM-unsplash.jpg" alt="">
+                </div>
+                <div class="grid-item">
+                    <div class="product-overlay">
+                        <img src="/assets/icons/look.svg" alt="view" class="icon-product">
+                    </div>
+                    <img class="product-img" src="/assets/products/alexander-andrews-VLGWE_SumrA-unsplash.jpg" alt="">
+                </div>
+
+
+
             </div>
             <button type="button" class="more-work">LOAD MORE WORK</button>
         </section>
         <section>
             <div class="container text-center">
                 <h2>Our Work Process</h2>
-                <p class="mt-5">Was years at season was there form he in in thom together over that. Third sixt gathered
+                <p class="mt-5 mx-20">Was years at season was there form he in in thom together over that. Third sixt
+                    gathered
                     female creeping beaning behold years.</p>
-                <video src="">
+                <div class="mt-5 position-relative">
+                    <video id="video">
+                        <source src="/assets/SampleVideo_1280x720_1mb.mp4" type="video/mp4" />
+                        <p>
+                            Your browser doesn't support HTML video. Here is a
+                            <a href="/assets/SampleVideo_1280x720_1mb.mp4">link to the video</a> instead.
+                        </p>
+                    </video>
 
-                </video>
+                </div>
             </div>
         </section>
 
         <section class="bg-tenary">
-            <div class="d-flex flex-wrap text-center pt-5 pb-5">
+            <div class="container d-flex flex-wrap text-center pt-5 pb-5">
                 <div class="grid-item">
-                    <img class="icon" src="" alt="">
-                    <p class="fw-bold">UI/UX DESIGN</p>
+                    <img class="icon-secondary" src="/assets/icons/diamond.svg" alt="">
+                    <p class="text-secondary fw-bold">UI/UX DESIGN</p>
                     <p>Be set fourth land god darkness make it wherein own</p>
                 </div>
                 <div class="grid-item">
-                    <img class="icon" src="" alt="">
-                    <p class="fw-bold">WEB DEVELOPMENT</p>
+                    <img class="icon-secondary" src="/assets/icons/arc.svg" alt="">
+                    <p class="text-secondary fw-bold">WEB DEVELOPMENT</p>
                     <p>A she'd them bring void moving third she'd kind fill</p>
                 </div>
                 <div class="grid-item">
-                    <img class="icon" src="" alt="">
-                    <p class="fw-bold">APP / MOBILE</p>
+                    <img class="icon-secondary" src="/assets/icons/phone.svg" alt="">
+                    <p class="text-secondary fw-bold">APP / MOBILE</p>
                     <p>Dominion man second spirit he, earth they're creeping</p>
                 </div>
                 <div class="grid-item">
-                    <img class="icon" src="" alt="">
-                    <p class="fw-bold">GAME DESIGN</p>
+                    <img class="icon-secondary" src="/assets/icons/joy.svg" alt="">
+                    <p class="text-secondary fw-bold">GAME DESIGN</p>
                     <p>Give won't after land fill creeping meat you, may</p>
                 </div>
                 <div class="grid-item">
-                    <img class="icon" src="" alt="">
-                    <p class="fw-bold">SEO / MARKETING</p>
+                    <img class="icon-secondary" src="/assets/icons/plane.svg" alt="">
+                    <p class="text-secondary fw-bold">SEO / MARKETING</p>
                     <p>Creepeth one seas cattle grass give moving saw give</p>
                 </div>
                 <div class="grid-item">
-                    <img class="icon" src="" alt="">
-                    <p class="fw-bold">PHOTOGRAPHY</p>
+                    <img class="icon-secondary" src="/assets/icons/star.svg" alt="">
+                    <p class="text-secondary fw-bold">PHOTOGRAPHY</p>
                     <p>Open, great whales air rule for, fourth life whales</p>
                 </div>
                 <div class="grid-item">
-                    <img class="icon" src="" alt="">
-                    <p class="fw-bold">GRAPHIC DESIGN</p>
+                    <img class="icon-secondary" src="/assets/icons/magic-wand.svg" alt="">
+                    <p class="text-secondary fw-bold">GRAPHIC DESIGN</p>
                     <p>Morning his saying moveth it multiply appear life be</p>
                 </div>
                 <div class="grid-item">
-                    <img class="icon" src="" alt="">
-                    <p class="fw-bold">ILLUSTRATIONS</p>
+                    <img class="icon-secondary" src="/assets/icons/paint-bucket.svg" alt="">
+                    <p class="text-secondary fw-bold">ILLUSTRATIONS</p>
                     <p>Whales likeness hath, man kind for them air two won't</p>
                 </div>
             </div>
         </section>
 
         <section class="bg-primary">
-            <div class="carousel text-center text-white pt-5 pb-5">
-                <div class="carousel-body">
-                    <p class="quote">"Outstanding hob and excveeded all expectations. It was a pleasure to work with
-                        them on a siable first project and am looking forward to start the next one asap."
+            <div class="container">
+                <div class="carousel text-center text-white pt-5 pb-5">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <div class="carousel-body">
+                                <p class="quote mx-20 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Deleniti, quidem veritatis fugiat sequi, quibusdam nulla ea quae vel, repudiandae ab
+                                    obcaecati beatae. Aliquam assumenda vel, distinctio blanditiis aliquid fugit sint.
+                            </div>
+                            <p class="quote-name mt-5 text-secondary text-white">Michael Hopkins</p>
+                        </div>
+
+
+                        <div class="carousel-item">
+                            <div class="carousel-body">
+                                <p class="quote mx-20 text-white">"Outstanding hob and excveeded all expectations. It was a
+                                    pleasure to
+                                    work with
+                                    them on a siable first project and am looking forward to start the next one asap."
+                            </div>
+                            <p class="quote-name mt-5 text-secondary text-white">Michael Hopkins</p>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="carousel-body">
+                                <p class="quote mx-20 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
+                                    exercitationem nihil dolorem voluptates recusandae corporis eligendi provident
+                                    velit, corrupti officia quibusdam atque maiores sed maxime, voluptatibus molestiae
+                                    quidem voluptatum? Rem.
+                            </div>
+                            <p class="quote-name mt-5 text-secondary text-white">Michael Hopkins</p>
+                        </div>
+                    </div>
                 </div>
-                <p class="quote-name">Michael Hopkins</p>
+                <div class="carousel-controls mt-5 mb-5">
+                </div>
             </div>
             </div>
-            <div class="carousel-controls mt-5 mb-5 d-flex">
-                <div class="carousel-prev carousel-control">&lt;</div>
-                        <div class="carousel-current carousel-control">-</div>
-                        <div class="carousel-next carousel-control">></div>
-                </div>
         </section>
 
         <section>
-            <div class="d-flex">
-                <img src="" alt="" class="partner-img">
-                <img src="" alt="" class="partner-img">
-                <img src="" alt="" class="partner-img">
-                <img src="" alt="" class="partner-img">
-                <img src="" alt="" class="partner-img">
+            <div class="container hero">
+                <div class="d-flex">
+                    <div class="grid-item"><img src="/assets/partners/Anchor-Graphics-20939101-1-1-580x386.jpg" alt=""
+                            class="partner-img"></div>
+                    <div class="grid-item"><img src="/assets/partners/Horse-Logo-Graphics-26667336-1-580x387.jpg" alt=""
+                            class="partner-img"></div>
+                    <div class="grid-item"><img src="/assets/partners/Mountain-Graphics-20938652-1-1-580x386.jpg" alt=""
+                            class="partner-img"></div>
+                    <div class="grid-item"><img src="/assets/partners/Mountain-logo-Graphics-27021752-1-580x387.jpg"
+                            alt="" class="partner-img"></div>
+                    <div class="grid-item"><img src="/assets/partners/Wolf-logo-Graphics-27284292-1-580x387.jpg" alt=""
+                            class="partner-img"></div>
+                </div>
             </div>
         </section>
         <section class="bg-tenary text-center">
-            <h2 class="pt-5">Need a Project?</h2>
-            <p class="mt-5">Let us know what you're looking for in an agency. We'll take a look and see if this could be the start of something beautiful.</p>
-
-            <form action="/sendMessage" method="post" class="">
-                <div class="input-group mt-3">
-                    <input type="text" name="name" id="inputName" placeholder="Your name">
-                    <input type="email" name="email" id="inputEmail" placeholder="Your Email">
-                </div>
-                <div class="mt-3">
-                    <input type="text" name="title" id="formTitle" placeholder="Your Title">
-                </div>
-                <div class="mt-3">
-                    <textarea name="comment" id="inputComment" cols="30" rows="10" placeholder="Your Comment"></textarea>
-
-                </div>
-                <button type="submit" class="btn btn-primary mt-3">SEND MESSAGE</button>
-            </form>
+            <div class="container">
+                <h2 class="pt-5">Need a Project?</h2>
+                <p class="mt-5 mx-20">Let us know what you're looking for in an agency. We'll take a look and see if
+                    this could be
+                    the start of something beautiful.</p>
+                <form action="/sendMessage" method="post" class="mx-20">
+                    <div class="input-group mt-3">
+                        <input type="text" name="name" id="inputName" placeholder="Your name">
+                        <input type="email" name="email" id="inputEmail" placeholder="Your Email">
+                    </div>
+                    <div class="input-group mt-3">
+                        <input type="text" name="title" id="formTitle" placeholder="Your Title">
+                    </div>
+                    <div class="input-group mt-3">
+                        <textarea name="comment" id="inputComment" cols="30" rows="10"
+                            placeholder="Your Comment"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3">SEND MESSAGE</button>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
+        <section class="bg-footer">
+            <div class="container">
+                <div class="d-flex flex-wrap">
+                    <div class="grid-item">
+                        <p class="fw-bold text-white">Piroll Design, Inc.</p>
+                        <span class="text-ternary">&copy; 2017 Piroll. All rights reserved.<br>Designed by robirurk.</span>
+                    </div>
+                    <div class="grid-item">
+                        <div class="d-flex flew-wrap">
+                            <div class="grid-item">
+                                <span class="text-ternary">hello@pirolltheme.com<br>+44 987 065 908</span>
 
+                            </div>
+                            <div class="grid-item">
+                                <div class="d-flex flex-wrap">
+                                    <div class="grid-item">
+                                        <ul>
+                                            <li><span class="text-ternary">Projects</span></li>
+                                            <li><span class="text-ternary">About</span></li>
+                                            <li><span class="text-ternary">Services</span></li>
+                                            <li><span class="text-ternary">Career</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="grid-item">
+                                        <ul>
+                                            <li><span class="text-ternary">News</span></li>
+                                            <li><span class="text-ternary">Events</span></li>
+                                            <li><span class="text-ternary">Contact</span></li>
+                                            <li><span class="text-ternary">Legals</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="grid-item">
+                                        <ul>
+                                            <li><span class="text-ternary">Facebook</span></li>
+                                            <li><span class="text-ternary">Twitter</span></li>
+                                            <li><span class="text-ternary">Instagram</span></li>
+                                            <li><span class="text-ternary">Dribble</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
     </footer>
+    <script src="/js/ui.js"></script>
+
 </body>
 
 </html>
